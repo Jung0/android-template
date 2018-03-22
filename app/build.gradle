@@ -14,12 +14,12 @@ dokka {
 }
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion buildConfig.compileSdk
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.example.djung0.android_template"
-        minSdkVersion 21
-        targetSdkVersion 27
+        minSdkVersion buildConfig.minSdk
+        targetSdkVersion buildConfig.targetSdk
         versionCode 1
         versionName "0.0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -53,64 +53,64 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     // kotlin
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$versions.kotlin"
+    implementation deps.kotlin.stdlib.jre7
 
     // Timber
-    implementation "com.jakewharton.timber:timber:$versions.timber"
+    implementation deps.timber
 
     // support library
-    implementation "com.android.support:support-v4:$versions.support"
-    implementation "com.android.support:appcompat-v7:$versions.support"
-    implementation "com.android.support:recyclerview-v7:$versions.support"
-    implementation "com.android.support:cardview-v7:$versions.support"
-    implementation "com.android.support:design:$versions.support"
-    implementation "com.android.support:support-emoji:$versions.support"
+    implementation deps.android.support.v4
+    implementation deps.android.support.appcompat
+    implementation deps.android.support.recyclerview
+    implementation deps.android.support.cardview
+    implementation deps.android.support.design
+    implementation deps.android.support.emoji
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     // architecture components
-    implementation "android.arch.lifecycle:runtime:$versions.arch"
-    implementation "android.arch.lifecycle:extensions:$versions.arch"
-    implementation "android.arch.lifecycle:reactivestreams:$versions.arch"
-    kapt "android.arch.lifecycle:compiler:$versions.arch"
+    implementation deps.android.arch.runtime
+    implementation deps.android.arch.extensions
+    implementation deps.android.arch.reactivestreams
+    kapt deps.android.arch.compiler
 
     // Glide
-    implementation "com.github.bumptech.glide:glide:$versions.glide"
-    implementation "com.github.bumptech.glide:okhttp-integration:$versions.glide"
-    kapt "com.github.bumptech.glide:compiler:$versions.glide"
+    implementation deps.glide.core
+    implementation deps.glide.okhttp3
+    kapt deps.glide.compiler
 
-    // OkHttp
-    implementation "com.squareup.okhttp3:okhttp:$versions.okhttp"
-    implementation "com.squareup.okhttp3:logging-interceptor:$versions.okhttp"
+    // OkHttp3
+    implementation deps.okhttp3.core
+    implementation deps.okhttp3.loggingIntercepter
 
     // Retrofit
-    implementation "com.squareup.retrofit2:retrofit:$versions.retrofit"
-    implementation "com.squareup.retrofit2:converter-moshi:$versions.retrofit"
-    implementation "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit"
+    implementation deps.retrofit.core
+    implementation deps.retrofit.converterMoshi
+    implementation deps.retrofit.adapterRxJava2
 
     // moshi
-    implementation "com.squareup.moshi:moshi:$versions.moshi"
-    implementation "com.squareup.moshi:moshi-kotlin:$versions.moshi"
+    implementation deps.moshi.core
+    implementation deps.moshi.kotlin
 
     // Dagger2
-    implementation "com.google.dagger:dagger:$versions.dagger"
-    implementation "com.google.dagger:dagger-android:$versions.dagger"
-    implementation "com.google.dagger:dagger-android-support:$versions.dagger"
-    kapt "com.google.dagger:dagger-compiler:$versions.dagger"
-    kapt "com.google.dagger:dagger-android-processor:$versions.dagger"
+    implementation deps.dagger.core
+    implementation deps.dagger.android
+    implementation deps.dagger.androidSupport
+    kapt deps.dagger.compiler
+    kapt deps.dagger.androidProcessor
 
     // Reactive X
-    implementation "io.reactivex.rxjava2:rxandroid:$versions.rxandroid"
-    implementation "io.reactivex.rxjava2:rxjava:$versions.rxjava"
-    implementation "io.reactivex.rxjava2:rxkotlin:$versions.rxkotlin"
+    implementation deps.reactive.rxandroid
+    implementation deps.reactive.rxjava2
+    implementation deps.reactive.rxkotlin
 
     // ktlint
-    ktlint "com.github.shyiko:ktlint:$versions.ktlint"
+    ktlint deps.ktlint
 
     // ktx
-    implementation "androidx.core:core-ktx:$versions.coreKtx"
+    implementation deps.android.x.core
 
 }
 
