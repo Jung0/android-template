@@ -2,6 +2,7 @@ ext {
     versions = [
             kotlin : "1.2.21",
             dokka : "0.9.15",
+            timber: "4.6.1",
             dagger : "2.14.1",
             glide : "4.6.1",
             retrofit : "2.4.0",
