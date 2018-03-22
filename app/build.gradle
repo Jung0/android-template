@@ -47,16 +47,16 @@ android {
 
 ext {
     versions = [
-            dagger_version : "2.14.1",
-            glide_version : "4.6.1",
-            retrofit_version : "2.4.0",
-            okhttp_version : "3.10.0",
-            moshi_version : "1.5.0",
-            support_version : "27.1.0",
-            arch_version : "1.1.0",
-            rxandroid_version : "2.0.1",
-            rxjava_version : "2.1.6",
-            rxkotlin_version : "2.1.0"
+            dagger : "2.14.1",
+            glide : "4.6.1",
+            retrofit : "2.4.0",
+            okhttp : "3.10.0",
+            moshi : "1.5.0",
+            support : "27.1.0",
+            arch : "1.1.0",
+            rxandroid : "2.0.1",
+            rxjava : "2.1.6",
+            rxkotlin : "2.1.0"
     ]
 }
 
@@ -66,51 +66,51 @@ dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 
     // support library
-    implementation "com.android.support:support-v4:$versions.support_version"
-    implementation "com.android.support:appcompat-v7:$versions.support_version"
-    implementation "com.android.support:recyclerview-v7:$versions.support_version"
-    implementation "com.android.support:cardview-v7:$versions.support_version"
-    implementation "com.android.support:design:$versions.support_version"
-    implementation "com.android.support:support-emoji:$versions.support_version"
+    implementation "com.android.support:support-v4:$versions.support"
+    implementation "com.android.support:appcompat-v7:$versions.support"
+    implementation "com.android.support:recyclerview-v7:$versions.support"
+    implementation "com.android.support:cardview-v7:$versions.support"
+    implementation "com.android.support:design:$versions.support"
+    implementation "com.android.support:support-emoji:$versions.support"
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     // architecture components
-    implementation "android.arch.lifecycle:runtime:$versions.arch_version"
-    implementation "android.arch.lifecycle:extensions:$versions.arch_version"
-    implementation "android.arch.lifecycle:reactivestreams:$versions.arch_version"
-    kapt "android.arch.lifecycle:compiler:$versions.arch_version"
+    implementation "android.arch.lifecycle:runtime:$versions.arch"
+    implementation "android.arch.lifecycle:extensions:$versions.arch"
+    implementation "android.arch.lifecycle:reactivestreams:$versions.arch"
+    kapt "android.arch.lifecycle:compiler:$versions.arch"
 
     // Glide
-    implementation "com.github.bumptech.glide:glide:$versions.glide_version"
-    implementation "com.github.bumptech.glide:okhttp-integration:$versions.glide_version"
-    kapt "com.github.bumptech.glide:compiler:$versions.glide_version"
+    implementation "com.github.bumptech.glide:glide:$versions.glide"
+    implementation "com.github.bumptech.glide:okhttp-integration:$versions.glide"
+    kapt "com.github.bumptech.glide:compiler:$versions.glide"
 
     // OkHttp
-    implementation "com.squareup.okhttp3:okhttp:$versions.okhttp_version"
-    implementation "com.squareup.okhttp3:logging-interceptor:$versions.okhttp_version"
+    implementation "com.squareup.okhttp3:okhttp:$versions.okhttp"
+    implementation "com.squareup.okhttp3:logging-interceptor:$versions.okhttp"
 
     // Retrofit
-    implementation "com.squareup.retrofit2:retrofit:$versions.retrofit_version"
-    implementation "com.squareup.retrofit2:converter-moshi:$versions.retrofit_version"
-    implementation "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit_version"
+    implementation "com.squareup.retrofit2:retrofit:$versions.retrofit"
+    implementation "com.squareup.retrofit2:converter-moshi:$versions.retrofit"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit"
 
     // moshi
-    implementation "com.squareup.moshi:moshi:$versions.moshi_version"
-    implementation "com.squareup.moshi:moshi-kotlin:$versions.moshi_version"
+    implementation "com.squareup.moshi:moshi:$versions.moshi"
+    implementation "com.squareup.moshi:moshi-kotlin:$versions.moshi"
 
     // Dagger2
-    implementation "com.google.dagger:dagger:$versions.dagger_version"
-    implementation "com.google.dagger:dagger-android:$versions.dagger_version"
-    implementation "com.google.dagger:dagger-android-support:$versions.dagger_version"
-    kapt "com.google.dagger:dagger-compiler:$versions.dagger_version"
-    kapt "com.google.dagger:dagger-android-processor:$versions.dagger_version"
+    implementation "com.google.dagger:dagger:$versions.dagger"
+    implementation "com.google.dagger:dagger-android:$versions.dagger"
+    implementation "com.google.dagger:dagger-android-support:$versions.dagger"
+    kapt "com.google.dagger:dagger-compiler:$versions.dagger"
+    kapt "com.google.dagger:dagger-android-processor:$versions.dagger"
 
     // Reactive X
-    implementation "io.reactivex.rxjava2:rxandroid:$versions.rxandroid_version"
-    implementation "io.reactivex.rxjava2:rxjava:$versions.rxjava_version"
-    implementation "io.reactivex.rxjava2:rxkotlin:$versions.rxkotlin_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$versions.rxandroid"
+    implementation "io.reactivex.rxjava2:rxjava:$versions.rxjava"
+    implementation "io.reactivex.rxjava2:rxkotlin:$versions.rxkotlin"
 
 }
