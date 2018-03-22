@@ -109,6 +109,9 @@ dependencies {
     // ktlint
     ktlint "com.github.shyiko:ktlint:$versions.ktlint"
 
+    // ktx
+    implementation "androidx.core:core-ktx:$versions.coreKtx"
+
 }
 
 task ktlint(type: JavaExec, group: "verification") {

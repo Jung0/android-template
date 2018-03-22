@@ -13,6 +13,7 @@ ext {
             rxandroid : "2.0.1",
             rxjava : "2.1.6",
             rxkotlin : "2.1.0",
-            ktlint : "0.20.0"
+            ktlint : "0.20.0",
+            coreKtx : "0.2"
     ]
 }
