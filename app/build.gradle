@@ -56,8 +56,13 @@ ext {
             arch : "1.1.0",
             rxandroid : "2.0.1",
             rxjava : "2.1.6",
-            rxkotlin : "2.1.0"
+            rxkotlin : "2.1.0",
+            ktlint : "0.20.0"
     ]
+}
+
+configurations {
+    ktlint
 }
 
 dependencies {
@@ -113,4 +118,22 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxjava:$versions.rxjava"
     implementation "io.reactivex.rxjava2:rxkotlin:$versions.rxkotlin"
 
+    // ktlint
+    ktlint "com.github.shyiko:ktlint:$versions.ktlint"
+
+}
+
+task ktlint(type: JavaExec, group: "verification") {
+    description = "Check Kotlin code style."
+    classpath = configurations.ktlint
+    main = "com.github.shyiko.ktlint.Main"
+    args "src/**/*.kt"
+}
+check.dependsOn ktlint
+
+task ktlintFormat(type: JavaExec, group: "formatting") {
+    description = "Fix Kotlin code style deviations."
+    classpath = configurations.ktlint
+    main = "com.github.shyiko.ktlint.Main"
+    args "-F", "src/**/*.kt"
 }
