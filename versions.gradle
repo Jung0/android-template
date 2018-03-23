@@ -6,7 +6,7 @@ ext {
     ]
 
     versions = [
-            kotlin : "1.2.21",
+            kotlin : "1.2.31",
             dokka : "0.9.15",
             timber: "4.6.1",
             dagger : "2.14.1",
