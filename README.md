@@ -24,7 +24,7 @@ git clone https://gist.github.com/Jung0/56d527ed5d2c783661f7d56c46332308
 git config commit.template downloaddir/.commit_template
 ```
 
-## 以下のライブラリを使うプロジェクトでを前提としています
+## 以下のライブラリを使うプロジェクトを前提としています
 
 * kotlin
 * dokka
