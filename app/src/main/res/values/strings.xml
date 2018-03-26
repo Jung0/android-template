@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">android-template</string>
+    <string name="domain_api">https://api.github.com</string>
 </resources>
