@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppThemeBase"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.example.djung0.android_template.ui.MainActivity">
+        <activity android:name="com.example.djung0.android_template.ui.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

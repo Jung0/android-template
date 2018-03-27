@@ -1,4 +1,4 @@
-package com.example.djung0.android_template.ui
+package com.example.djung0.android_template.ui.main
 
 import android.os.Bundle
 import com.example.djung0.android_template.AppActivity
