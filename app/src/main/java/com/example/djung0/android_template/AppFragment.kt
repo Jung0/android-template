@@ -6,6 +6,6 @@ import com.example.djung0.android_template.shared.di.Injectable
 import javax.inject.Inject
 
 abstract class AppFragment : Fragment(), Injectable {
-    @Inject
-    lateinit var viewModel: ViewModelProvider.Factory
+//    @Inject
+//    lateinit var viewModel: ViewModelProvider.Factory
 }
