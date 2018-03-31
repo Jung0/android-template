@@ -25,6 +25,9 @@ example
     ...
 ```
 
+🚧 当初、自分はフロントエンドのCSS設計で使われるBEMのような命名規則が最もわかりやすいと思っていました。
+しかし、`kotlin-android-extensions`を使用した場合、補完機能で作成者のセンスに依存してしまうのを懸念してやめました。🙇
+
 #### color
 
 Select base color from [Material Design_Guide](https://material.io/guidelines/style/color.html)
