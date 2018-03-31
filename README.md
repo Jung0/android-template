@@ -8,6 +8,38 @@ Androidでプロジェクトを作る際の下地。
 - [x] color
 - [x] theme
 
+## Style Guide
+
+### layout
+
+#### 命名規則
+
+##### layout
+
+`resource id` は `[layout] or [view]_[わかりやすい名前]`
+
+example
+```xml
+<ImageView
+    android:id="@+id/image_header_thumbnail"
+    ...
+```
+
+#### color
+
+Select base color from [Material Design_Guide](https://material.io/guidelines/style/color.html)
+
+[colors.xml](https://github.com/Jung0/android-template/blob/master/app/src/main/res/values/colors.xml)
+
+If OriginalColor exists, write it as `[Color] _ [Number]`
+
+#### dimens
+
+[dimen_base.xml](https://github.com/Jung0/android-template/blob/master/app/src/main/res/values/dimens_base.xml)
+
+
+Please use [dimens.xml](https://github.com/Jung0/android-template/blob/master/app/src/main/res/values/dimens.xml) to set for each layout file
+
 ## Architecture
 
 I am currently thinking of inserting an architecture 🤔
